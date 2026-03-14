@@ -1,0 +1,4 @@
+room_code,room_name,bed_type
+STD,Standard Room,Twin Bed
+DLX,Deluxe Room,Queen Bed
+SUT,Executive Suite,King Bed

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_bookings
+    columns:
+      - name: booking_id
+        tests:
+          - unique
+          - not_null
+
+      - name: status_booking
+        tests:
+          - accepted_values:
+              values: ["Checked Out", "Canceled", "No Show"]
+
+  - name: fct_revenue
+    columns:
+      - name: revenue_id
+        tests:
+          - unique
+          - not_null
